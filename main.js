@@ -20,3 +20,15 @@ function addBookToLibrary(){
 
 }
 
+document.getElementById("add-book-button").addEventListener("click", function () {
+    const form = document.getElementById("book-input-form-container");
+    form.classList.toggle("hidden"); 
+  });
+  
+document.getElementById("user-input-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form from submitting (for now)
+    alert("Form submitted!"); // Handle form submission
+    document.getElementById("book-input-form-container").classList.add("hidden"); // Hide the form
+  });
+  
+

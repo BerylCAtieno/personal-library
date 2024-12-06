@@ -32,3 +32,153 @@
 #nav-links-container > ul > li:hover {
     color: #5271ff;
 }
+
+#add-book-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        background-color: #5271ff;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      
+      #add-book-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+      }
+
+/* Toggle Switch Container */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Toggle Switch Style */
+  .toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+  }
+  
+  .toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 4px;
+    left: 4px;
+    transition: 0.4s;
+  }
+  
+  .toggle-switch input:checked + .slider {
+    background-color: #007bff;
+  }
+  
+  .toggle-switch input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+
+  #book-input-form-container {
+    position: fixed;
+    top: 25vh;
+    left: 40vw;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .input-wrapper-div {
+    display: flex;
+    padding: 0.3rem;
+  }
+  .input-wrapper-div > input {
+    background: rgb(252, 249, 249);
+  }
+  #book-input-form-container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  } 
+
+  .hidden {
+    display: none;
+  }
+  
+
+
+
+/* CSS */
+#book-submit-button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+#book-submit-button:active,
+#book-submit-button:focus {
+  outline: none;
+}
+
+#book-submit-button:hover {
+  background-position: -20px -20px;
+}
+
+#book-submit-button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
